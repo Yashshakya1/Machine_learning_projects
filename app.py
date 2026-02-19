@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import joblib
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import time
 
 from reportlab.lib.pagesizes import letter
