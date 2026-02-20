@@ -36,7 +36,7 @@ def create_pdf(prediction, inputs_dict):
     return file_path
 
 
-# ================= ANIMATED COUNTER =================
+# # ================= ANIMATED COUNTER =================
 def animated_counter(target_value, duration=1.5):
     placeholder = st.empty()
     steps = 50
@@ -128,15 +128,15 @@ input:focus {
 }
 
 </style>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True)#
 
 
-# ================= TITLE =================
+# TITLE 
 st.markdown("<div class='title'>🏠 House Price Prediction App</div>", unsafe_allow_html=True)
 st.markdown("<div class='subtext'>Enter property details to estimate price</div><br>", unsafe_allow_html=True)
 
 
-# ================= SIDEBAR =================
+# SIDEBAR
 st.sidebar.header("🔧 App Settings")
 
 model = joblib.load("model.pkl")
@@ -145,7 +145,7 @@ scaler = joblib.load("scaler.pkl")
 st.sidebar.success("Model Loaded Successfully ✔")
 
 
-# ================= INPUT FORM =================
+#  INPUT FORM 
 st.markdown("### 📝 Enter House Details")
 col1, col2, col3 = st.columns(3)
 
