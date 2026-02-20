@@ -1,5 +1,5 @@
 streamlit
 numpy
-scikit-learn
 joblib
 reportlab
+scikit-learn==1.7.2
